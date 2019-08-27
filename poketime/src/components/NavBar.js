@@ -4,8 +4,6 @@ import { Link, NavLink, withRouter } from 'react-router-dom'
 
 // Wrapping (by Using higher order component) NavBar component inorder to give props here all those properties that Route tag provides to rendering component
 const NavBar = (props) => {
-    console.log(props)
-    
     return(
         <nav className="nav-wrapper cyan darken-5">
             <div className="container">
