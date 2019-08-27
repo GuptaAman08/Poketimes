@@ -1,4 +1,5 @@
 import React from 'react'
+import Color from '../hoc/Colors'
 
 const About = (props) => {
     return(
@@ -8,4 +9,4 @@ const About = (props) => {
         </div>
     )
 }
-export default About
+export default Color(About)
