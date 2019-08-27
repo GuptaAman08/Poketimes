@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Contact = (props) => {
-    // setTimeout(() => {
-    //     props.history.push('/about')
-    // }, 2000)
+    // Below code progrmatically redirects to another component
+    setTimeout(() => {
+        props.history.push('/about')
+    }, 2000)
     return(
         <div className="Contact container">
             <h3 className="center">Contact</h3>

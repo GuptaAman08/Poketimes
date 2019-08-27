@@ -1,12 +1,15 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-// NavLink gives u nav bar an active class as well which Link doesnt you can check in inspect element
-// Lesson 1
+import { Link, NavLink, withRouter } from 'react-router-dom'
+
+
+// Wrapping (by Using higher order component) NavBar component inorder to give props here all those properties that Route tag provides to rendering component
 const NavBar = (props) => {
+    console.log(props)
+    
     return(
         <nav className="nav-wrapper cyan darken-5">
             <div className="container">
-                <a className="brand-logo">PokeTimes</a>
+                <Link to='/' className="brand-logo">PokeTimes</Link>
                 <ul className="right">
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/about">AboutUs</NavLink></li>
@@ -16,4 +19,4 @@ const NavBar = (props) => {
         </nav>
     )
 }
-export default NavBar
+export default withRouter(NavBar)
